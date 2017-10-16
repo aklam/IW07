@@ -1,107 +1,20 @@
-[I 13:27:46.346 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
-[I 13:27:46.402 NotebookApp] Serving notebooks from local directory: /home/ubuntu/notebook
-[I 13:27:46.403 NotebookApp] 0 active kernels 
-[I 13:27:46.403 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
-[I 13:27:46.403 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 13:27:51.330 NotebookApp] 302 GET /api/contents/TF%20MNIST.ipynb?content=0&_=1508159935531 (140.180.252.6) 2.04ms
-[W 13:27:51.787 NotebookApp] None
-[W 13:27:51.788 NotebookApp] 403 PUT /api/contents/TF%20MNIST.ipynb (140.180.252.6) 2.40ms referer=https://ec2-13-59-30-62.us-east-2.compute.amazonaws.com:8888/notebooks/TF%20MNIST.ipynb
-[W 13:27:52.625 NotebookApp] Couldn't authenticate WebSocket connection
-[W 13:27:52.631 NotebookApp] 403 GET /api/kernels/732dbeb7-1716-4490-b26d-a8c480ebe422/channels?session_id=574C70EA7A174B289ECE41EAD4417047 (140.180.252.6) 7.05ms referer=None
-[I 13:27:54.543 NotebookApp] 302 GET /notebooks/TF%20MNIST.ipynb (140.180.252.6) 0.75ms
-[I 13:27:55.755 NotebookApp] 302 GET /api/sessions?_=1508159646621 (140.180.252.6) 0.91ms
-[I 13:27:55.757 NotebookApp] 302 GET /api/terminals?_=1508159646622 (140.180.252.6) 0.77ms
-[I 13:27:56.637 NotebookApp] 302 GET /tree? (140.180.252.6) 0.75ms
-[W 13:27:56.999 NotebookApp] Couldn't authenticate WebSocket connection
-[W 13:27:57.000 NotebookApp] 403 GET /api/kernels/db674e54-81f3-49d3-841a-b523d37ec4c2/channels?session_id=A9B3C42A672244758C038C3F4951B51F (140.180.252.6) 2.53ms referer=None
-[I 13:27:59.941 NotebookApp] 302 POST /login?next=%2Ftree%3F (140.180.252.6) 1.06ms
-[I 13:28:03.433 NotebookApp] 302 GET /login?next=%2Fnotebooks%2FTF%2520MNIST.ipynb (140.180.252.6) 0.71ms
-[W 13:28:05.239 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171016132746 (140.180.252.6) 3.62ms referer=https://ec2-13-59-30-62.us-east-2.compute.amazonaws.com:8888/notebooks/TF%20MNIST.ipynb
-[I 13:28:05.261 NotebookApp] Kernel started: 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:28:05.924 NotebookApp] Adapting to protocol v5.1 for kernel 65037ed9-cab6-4179-b606-964ba511df3f
-[W 13:28:23.829 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171016132746 (140.180.252.6) 1.25ms referer=https://ec2-13-59-30-62.us-east-2.compute.amazonaws.com:8888/notebooks/TF%20Tutorial%202.ipynb
-[I 13:28:23.954 NotebookApp] Kernel started: 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-[I 13:28:24.519 NotebookApp] Adapting to protocol v5.1 for kernel 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-2017-10-16 13:28:29.002211: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:28:29.002251: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:28:29.002258: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:28:29.002263: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:28:29.002267: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:28:29.025309: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
-2017-10-16 13:28:29.025351: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
-[I 13:30:06.380 NotebookApp] Saving file at /TF MNIST.ipynb
-[I 13:30:24.886 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[W 13:30:29.338 NotebookApp] delete /MNIST_data/t10k-images-idx3-ubyte.gz
-[W 13:30:29.340 NotebookApp] delete /MNIST_data/t10k-labels-idx1-ubyte.gz
-[W 13:30:29.341 NotebookApp] delete /MNIST_data/train-images-idx3-ubyte.gz
-[W 13:30:29.343 NotebookApp] delete /MNIST_data/train-labels-idx1-ubyte.gz
-[I 13:32:06.277 NotebookApp] Saving file at /TF MNIST.ipynb
-[I 13:34:15.880 NotebookApp] Kernel restarted: 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:34:17.368 NotebookApp] Adapting to protocol v5.1 for kernel 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:36:04.048 NotebookApp] Kernel restarted: 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:36:05.302 NotebookApp] Adapting to protocol v5.1 for kernel 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:36:06.263 NotebookApp] Saving file at /TF MNIST.ipynb
-2017-10-16 13:36:16.074703: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:36:16.074749: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:36:16.074762: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:36:16.074773: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:36:16.074783: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:36:16.100989: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
-2017-10-16 13:36:16.101038: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
-[I 13:37:25.545 NotebookApp] Saving file at /TF MNIST.ipynb
-[I 13:37:35.458 NotebookApp] Kernel restarted: 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:37:36.394 NotebookApp] Adapting to protocol v5.1 for kernel 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:37:42.146 NotebookApp] Saving file at /TF MNIST.ipynb
-[I 13:37:42.503 NotebookApp] Saving file at /TF MNIST.ipynb
-[I 13:37:50.265 NotebookApp] Kernel restarted: 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-[I 13:37:51.076 NotebookApp] Adapting to protocol v5.1 for kernel 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-2017-10-16 13:37:53.891202: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:37:53.891237: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:37:53.891243: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:37:53.891248: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:37:53.891252: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:37:53.899144: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
-2017-10-16 13:37:53.899194: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
-[W 13:38:09.385 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171016132746 (140.180.252.6) 1.79ms referer=https://ec2-13-59-30-62.us-east-2.compute.amazonaws.com:8888/notebooks/TF%20MNIST.ipynb
-[I 13:38:09.701 NotebookApp] Adapting to protocol v5.1 for kernel 65037ed9-cab6-4179-b606-964ba511df3f
-[I 13:38:26.218 NotebookApp] Kernel restarted: 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-[I 13:38:26.390 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:38:27.021 NotebookApp] Adapting to protocol v5.1 for kernel 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-2017-10-16 13:38:30.117209: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:38:30.117256: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:38:30.117263: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:38:30.117268: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:38:30.117273: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:38:30.127353: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
-2017-10-16 13:38:30.127397: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
-[I 13:40:26.389 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:44:26.375 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:46:26.371 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:48:26.360 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:48:29.208 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:48:39.311 NotebookApp] Kernel restarted: 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-[I 13:48:40.103 NotebookApp] Adapting to protocol v5.1 for kernel 87d2e771-ae8d-43b4-8b2f-f5e045b9263e
-2017-10-16 13:48:46.365825: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:48:46.365869: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:48:46.365876: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:48:46.365881: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:48:46.365886: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
-2017-10-16 13:48:46.375972: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
-2017-10-16 13:48:46.376012: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
-[I 13:50:26.365 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:52:26.374 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:54:26.346 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[W 13:54:34.195 NotebookApp] SSL Error on 8 ('38.142.184.18', 6666): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
-[I 13:56:26.344 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 13:58:26.347 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:00:26.332 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:02:26.330 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:04:26.325 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:06:26.321 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:08:26.317 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:10:26.315 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:12:26.306 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:14:26.303 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:16:26.294 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:18:26.294 NotebookApp] Saving file at /TF Tutorial 2.ipynb
-[I 14:20:26.314 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+[I 14:33:01.427 NotebookApp] Serving notebooks from local directory: /home/ubuntu/notebook
+[I 14:33:01.427 NotebookApp] 0 active kernels 
+[I 14:33:01.427 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
+[I 14:33:01.427 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 14:33:17.393 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171016143301 (140.180.252.6) 6.97ms referer=https://ec2-13-59-30-62.us-east-2.compute.amazonaws.com:8888/notebooks/TF%20Tutorial%202.ipynb
+[I 14:33:17.616 NotebookApp] Kernel started: d7eb30fe-75bb-440a-9283-65a8780112b3
+[I 14:33:18.697 NotebookApp] Adapting to protocol v5.1 for kernel d7eb30fe-75bb-440a-9283-65a8780112b3
+[I 14:33:29.421 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+2017-10-16 14:33:35.396788: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-16 14:33:35.396829: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-16 14:33:35.396835: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-16 14:33:35.396840: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-16 14:33:35.396844: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-16 14:33:35.406949: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
+2017-10-16 14:33:35.406992: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (ip-172-31-17-15): /proc/driver/nvidia/version does not exist
+[I 14:35:17.978 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+[I 14:39:18.219 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+[I 14:40:39.432 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+[I 14:40:40.373 NotebookApp] Saving file at /TF Tutorial 2.ipynb
+[I 14:40:40.661 NotebookApp] Saving file at /TF Tutorial 2.ipynb

@@ -3,8 +3,29 @@ wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/data.zip
 unzip data.zip
 rm data.zip
 
-wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/faces96.zip
-unzip faces96.zip
-rm faces96.zip
-mv faces96 EssexFaces
+
+#copy images from african directory
+cd data/african/imgs
+cp *.png ../../
+cd ../../
+
+#copy images from flickr directory
+cd flickr2/imgs
+cp *.png ../../
+cd ../../
+
+##copy images from martin
+cd martin/imgs
+cp *.png ../../
+cd ../../
+
+echo "done copying"
+rm -r african eyes flickr2 kelco martin mit2 platon samples
+
+
+
+#wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/faces96.zip
+#unzip faces96.zip
+#rm faces96.zip
+#mv faces96 EssexFaces
 

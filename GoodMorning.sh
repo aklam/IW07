@@ -22,6 +22,13 @@ cd ../../
 echo "done copying"
 rm -r african eyes flickr2 kelco martin mit2 platon samples
 
+((i=0))
+for d in * ; do 
+	newname="data${i}.png"
+	mv $d $newname
+	(( i++ ))
+done
+
 
 
 #wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/faces96.zip

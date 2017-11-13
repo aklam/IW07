@@ -1,7 +1,7 @@
 # Configuration file for jupyter-notebook.
 
 # Edit this line to change password:
-notebook_password = 'iw07-default-notebook-password'
+notebook_password = 'iw07password'
 
 from IPython.lib import passwd
 

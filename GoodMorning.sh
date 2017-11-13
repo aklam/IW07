@@ -1,3 +1,6 @@
+#move ec2setup directory to root
+cp -r ec2setup ~
+
 #download data and decompress it
 wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/data.zip
 unzip data.zip
@@ -33,8 +36,6 @@ rm data122.png
 
 cd ../
 mv data groundTruth
-mkdir exposelvl1
-mkdir exposelvl2
 
 #wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/faces96.zip
 #unzip faces96.zip

@@ -80,4 +80,4 @@ def allPics():
         exposeImg(f)
 
 
-allPics()
+#allPics()

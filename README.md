@@ -15,3 +15,16 @@ https://github.com/lengstrom/fast-style-transfer
 
 encoder decode network first, high/low frequency images
 deep bilateral learning
+
+https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
+
+
+source activate pytorch_p27
+
+python main.py eval --content-image images/content/venice-boat.jpg --style-image images/21styles/candy.jpg --model models/21styles.model --content-size 1024 --output-image ~/test123/1.jpg
+
+Deep Learning AMI (Ubuntu) Version 1.0 - ami-f0725c95
+Deep Learning AMI (Ubuntu) Version 1.0
+
+
+http://pytorch.org/tutorials/beginner/data_loading_tutorial.html

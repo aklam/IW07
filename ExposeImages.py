@@ -4,7 +4,7 @@ import os
 import sys
 import random
 from PIL import Image
-from skimage import data, exposure, img_as_float
+#from skimage import data, exposure, img_as_float
 
 
 def exposeImg(file):
@@ -78,7 +78,8 @@ def allPics(dirName):
         print("doing " + f)
         exposeImg(f)
 
-allCont = os.listdir()
+currentDir = os.getcwd()
+allCont = os.listdir(currentDir)
 allDir = []
 for f in allCont:
     if os.path.isdir(f):

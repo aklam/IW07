@@ -1,14 +1,21 @@
 #move ec2setup directory to root
-cp -r ec2setup ~
+#cp -r ec2setup ~
 
 #download data and decompress it
 wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/data.zip
 
-bash Prep10kWilmaBainbridge.sh
+
 bash PrepsomeData.sh
 
-#wget https://s3.us-east-2.amazonaws.com/iw07alexlamfacesdataset/faces96.zip
-#unzip faces96.zip
-#rm faces96.zip
-#mv faces96 EssexFaces
+
+#### FOR SCALING ####
+#bash Prep10kWilmaBainbridge.sh
+
+####combine directories into All_Images
+#mkdir All_images
+#mv -v data_images/* All_images/
+#xargs -0 mv -v WB_images/* All_images/
+
+
+python ExposeImages.py data_images
 

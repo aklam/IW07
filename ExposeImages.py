@@ -1,6 +1,8 @@
 import numpy as np
 import math
 import os
+import sys
+import random
 from PIL import Image
 from skimage import data, exposure, img_as_float
 
@@ -13,8 +15,9 @@ def exposeImg(file):
 
     expose  = Image.new("RGB",(image.width, image.height))
     expose2 = Image.new("RGB",(image.width, image.height))
-    exposeLVL  = 1.6
-    exposeLVL2 = 2
+    exposeLVL  = round(random.uniform(1.2,2),2)
+    exposeLVL2 = round(random.uniform(1.2,2),2)
+
 
     #try to recover image by just multiplying
     rec = Image.new("RGB",(image.width, image.height))
@@ -47,30 +50,26 @@ def exposeImg(file):
             expose2.putpixel((w, h), (r3, g3, b3))
 
 
-    newName = fileName + "_explvl_" + str(exposeLVL) + "." + fileExt
-    newName2 = fileName + "_explvl_" + str(exposeLVL2) + "." + fileExt
+    newName = fileName + "_explvl." + str(exposeLVL) + "." + fileExt
+    newName2 = fileName + "_explvl." + str(exposeLVL2) + "." + fileExt
 
     os.chdir("../")
     wd = os.getcwd()
-    expose.save(wd + "/exposelvl1/" + newName)
-    expose2.save(wd + "/exposelvl2/" + newName2)
+    expose.save(wd + "/OverExpose/" + newName)
+    expose2.save(wd + "/OverExpose/" + newName2)
 
     
+def allPics(dirName):
+    if not os.path.exists("OverExpose"):
+        os.makedirs("OverExpose")
+    # if not os.path.exists("exposelvl2"):
+    #     os.makedirs("exposelvl2")
 
-
-#def gammaCor():
-#    obama = Image.open('Obama.jpg')
-#    image = img_as_float(data.moon())
-#    gamma_corrected = exposure.adjust_gamma(image, 1)
-#    print (image.mean() > gamma_corrected.mean())
-
-#exposeImg('Obama.jpg')
-def allPics():
-    os.chdir(os.getcwd() + "/groundTruth")
+    os.chdir(os.getcwd() + "/" + dirName)
     currentDir = os.getcwd()
     filelist=os.listdir(currentDir)
     for fichier in filelist[:]:
-        if not(fichier.endswith(".png")):
+        if not(fichier.endswith(".png") or fichier.endswith(".jpg") or fichier.endswith(".jpeg")):
             filelist.remove(fichier)
     
     savewd = os.getcwd()
@@ -79,5 +78,13 @@ def allPics():
         print("doing " + f)
         exposeImg(f)
 
+allCont = os.listdir()
+allDir = []
+for f in allCont:
+    if os.path.isdir(f):
+        allDir.append(f)
 
-#allPics()
+if sys.argv[1] not in allCont:
+    print("Not valid directory")
+else: 
+    allPics(sys.argv[1])

@@ -30,4 +30,4 @@ done
 rm data122.png
 
 cd ../
-mv data groundTruth
+mv data data_images

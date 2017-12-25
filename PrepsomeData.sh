@@ -27,7 +27,23 @@ for d in * ; do
 	(( i++ ))
 done
 
+rm data10.png
+rm data34.png
+rm data44.png
+rm data55.png
+rm data56.png
+rm data57.png
+rm data63.png
+rm data81.png
+rm data98.png
+rm data115.png
 rm data122.png
+rm data131.png
+rm data134.png
+rm data135.png
+rm data138.png
+rm data140.png
+rm data141.png
 
 cd ../
 mv data data_images

@@ -28,3 +28,5 @@ Deep Learning AMI (Ubuntu) Version 1.0
 
 
 http://pytorch.org/tutorials/beginner/data_loading_tutorial.html
+
+currently ZhangZhang saves a different model for each different style. we want a single model for the multiple styles
